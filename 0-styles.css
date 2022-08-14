@@ -32,10 +32,22 @@
 :root {
     --font-family: 'Source sans pro', 'Spin Cycle', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --text-color: #FFFFFF;
-    --font-size: 2.5em;
-    --font-weight-h2: bold;
+    --font-size-h1: 2em;
+    --font-size-h2: 1em;
+    --font-size-text: 1rem;
+    --font-weight: bold;
+    --line-height-text: 25px;
+    --font-weight-text: normal;
 
 
+    /* ---  Buttons --- */
+    --background-color-button: #fc5c5c;
+    --padding-buttons: 13px 31px;
+    --border-radius-button: 30px;
+
+    /* ---  Menu --- */
+
+    --font-size-menu: 0.75rem;
 }
 
 * {
@@ -46,17 +58,7 @@ body, html {
     height: 100%; /* The backgraund image cover all the scream */
 }
 
-.section-hero {
-    background-image: url("images/headphones_hero_1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;  /* The backgraund image cover all the scream */
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    color: var(--text-color);
-}
+/* --------- */
 
 .header-container {
     display: flex;
@@ -81,15 +83,66 @@ body, html {
     display: inline-block;
 }
 
+.nav .nav-item .nav-link {
+    font-size: var(--font-size-menu);
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: var(--font-weight);
+    padding: 0 18px;
+}
+
+.nav .nav-item .nav-link:hover {
+    color: var(--background-color-button);
+}
+
+/* --------- */
+
+.section-hero {
+    background-image: url("images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;  /* The backgraund image cover all the scream */
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+}
+
 .section-inner {
     padding: 0;
-    margin: 382px 372px;
+    margin: 200.6px 365px;
+    text-align: center;
     width: 637px;
     height: 313px;
 }
 
-.section-inner h2 {
+.section-inner .section-title {
     margin: 0;
-    font-size: var(--font-size);
-    font-weight: var(--font-weight-h2);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight);
 }
+
+.section-inner .section-subtitle {
+    margin-bottom: 45px;
+    font-size: var(--font-size-h2);
+    font-size: var(--font-weight);
+}
+
+.button {
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--background-color-button);
+    padding: var(--padding-buttons);
+    border-radius: var(--border-radius-button);
+}
+
+.section-inner .paragraph-inner {
+    font-size: var(--font-size-text);
+    margin-top: 65px;
+    line-height: var(--line-height-text);
+    font-weight: var(--font-weight-text);
+}
+
+/* --------- */
+
