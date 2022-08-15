@@ -32,8 +32,8 @@
 :root {
     --font-family: 'Source sans pro', 'Spin Cycle', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --text-color: #FFFFFF;
-    --font-size-h1: 2em;
-    --font-size-h2: 1em;
+    --font-size-h2: 2em;
+    --font-size-h3: 1em;
     --font-size-text: 1rem;
     --font-weight: bold;
     --line-height-text: 25px;
@@ -41,6 +41,7 @@
 
 
     /* ---  Buttons --- */
+
     --background-color-button: #fc5c5c;
     --padding-buttons: 13px 31px;
     --border-radius-button: 30px;
@@ -52,6 +53,10 @@
 
 * {
     font-family: var(--font-family);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body, html {
@@ -119,14 +124,14 @@ body, html {
 
 .section-inner .section-title {
     margin: 0;
-    font-size: var(--font-size-h1);
+    font-size: var(--font-size-h2);
     font-weight: var(--font-weight);
 }
 
 .section-inner .section-subtitle {
+    margin-top: 0.35rem;
     margin-bottom: 45px;
-    font-size: var(--font-size-h2);
-    font-size: var(--font-weight);
+    font-size: var(--font-size-h3);
 }
 
 .button {
@@ -137,7 +142,7 @@ body, html {
     border-radius: var(--border-radius-button);
 }
 
-.section-inner .paragraph-inner {
+.paragraph-section {
     font-size: var(--font-size-text);
     margin-top: 65px;
     line-height: var(--line-height-text);
@@ -145,4 +150,3 @@ body, html {
 }
 
 /* --------- */
-
